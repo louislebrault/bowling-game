@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+}
+
+.scoreBoard {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+
+  li {
+    width: 5rem;
+    height: 5rem;
+    background: green;
+    border: 3px solid gray;
+    display: flex;
+    justify-content: flex-end;
+
+    .modifier {
+      width: 2rem;
+      height: 2rem;
+      border: 2px solid gray;
+    }
+
+    .score  {
+
+    }
+  }
+}
