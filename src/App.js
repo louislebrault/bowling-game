@@ -12,8 +12,25 @@ class App extends Component {
   }
 
   roll(pins) {
+    const rolls = this.state.rolls;
+
+    if (rolls.length) {
+      const lastRoll = rolls[rolls.length - 1]
+
+      if(lastRoll[1] === undefined) {
+        let currentRoll = rolls.pop()
+        currentRoll.push(pins)
+        
+        this.setState((state) => ({
+          rolls: [...rolls, currentRoll ]
+        }))
+
+        return
+      }
+    }
+
     this.setState((state) => ({
-      rolls: [...this.state.rolls, pins]
+      rolls: [...this.state.rolls, [pins]]
     }))
   }
 

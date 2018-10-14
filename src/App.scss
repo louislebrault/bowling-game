@@ -14,7 +14,7 @@
   li {
     width: 5rem;
     height: 5rem;
-    background: green;
+    background: mediumslateblue;
     border: 3px solid gray;
     display: flex;
     justify-content: flex-end;
@@ -22,11 +22,13 @@
     .modifier {
       width: 2rem;
       height: 2rem;
+      background: lightblue;
       border: 2px solid gray;
     }
 
     .score  {
-
+      align-self: flex-end;
+      font-size: 2rem
     }
   }
 }
